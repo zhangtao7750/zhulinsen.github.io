@@ -257,6 +257,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/15/Scrapy-爬取知乎/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mumu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mumu' Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/15/Scrapy-爬取知乎/" itemprop="url">Scrapy 爬取知乎全站用户信息</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-15T12:48:03+08:00">
+                2019-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习心得/" itemprop="url" rel="index">
+                    <span itemprop="name">学习心得</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong><em>目标</em></strong>：爬取知乎所有用户的个人信息，例如name、id、school等</p>
+<p><strong><em>思路</em></strong>：先确定一个大V，获取他的关注列表和粉丝列表，再获取 <strong>粉丝和关注用户</strong> 的 <strong>关注者和粉丝</strong> 的关注和粉丝列表，以此循环调用，可以获得几乎全站用户，再各自获取其个人信息，存储到数据库时加一个去重判断即可。</p>
+<p><strong><em>遇到的问题</em></strong>：在爬取到三千多个用户信息的时候，出现了403，然后ip被封，获取的代理池也不好用，躲不过知乎的反爬虫，所以先这样吧</p>
+<p><strong><em>优化</em></strong>：发起请求时可以再加个判断，如果没有粉丝或者没有关注者的，对应就不再发起请求</p>
+<p><strong><em>参考</em></strong>：静觅大佬的教学视频</p>
+<p><strong><em>代码</em></strong>：<a href="https://github.com/ZhuLinsen/Scrapy/tree/master/zhihuuser" target="_blank" rel="noopener">https://github.com/ZhuLinsen/Scrapy/tree/master/zhihuuser</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/14/hexo-github的一些使用心得/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -575,7 +722,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -586,7 +733,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -597,7 +744,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
