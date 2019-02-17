@@ -2,14 +2,15 @@
 <search>
   <entry>
     <title><![CDATA[Scrapy 爬取百度贴吧全站图片]]></title>
-    <url>%2F2019%2F02%2F16%2FScrapy%E7%88%AC%E5%8F%96-%E5%A3%81%E7%BA%B8%E5%90%A7-%E6%89%80%E6%9C%89%E5%9B%BE%E7%89%87%2F</url>
+    <url>%2F2019%2F02%2F16%2FScrapy%20%E7%88%AC%E5%8F%96%E7%99%BE%E5%BA%A6%E8%B4%B4%E5%90%A7%E5%85%A8%E7%AB%99%E5%9B%BE%E7%89%87%2F</url>
     <content type="text"><![CDATA[今天用scrapy写了一个爬取百度贴吧的爬虫，以壁纸吧为例。 进入壁纸吧，获取每个帖子的链接，处理一下分页，获取所有帖子的链接 然后获取每个帖子里的图片链接，通过ImagesPipeline下载所有照片 github链接：https://github.com/ZhuLinsen/Scrapy/tree/master/tiebapic（目前还没有处理分页）]]></content>
       <categories>
         <category>爬虫</category>
       </categories>
       <tags>
+        <tag>爬虫</tag>
+        <tag>python</tag>
         <tag>scrapy</tag>
-        <tag>爬虫，python</tag>
       </tags>
   </entry>
   <entry>
