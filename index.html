@@ -436,12 +436,24 @@
                 
               
 
-              <time title="创建时间：2019-02-18 18:47:52 / 修改时间：21:57:22" itemprop="dateCreated datePublished" datetime="2019-02-18T18:47:52+08:00">2019-02-18</time>
+              <time title="创建时间：2019-02-18 18:47:52" itemprop="dateCreated datePublished" datetime="2019-02-18T18:47:52+08:00">2019-02-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-19 18:09:15" itemprop="dateModified" datetime="2019-02-19T18:09:15+08:00">2019-02-19</time>
               
             
           </span>
@@ -515,9 +527,10 @@
 </li>
 <li><p>点击F12审查元素，查看图片所在元素<br><img src="https://img-blog.csdnimg.cn/20190218184148938.png" style=""></p>
 </li>
-<li><p>将红框中的链接复制到博客文本当中，如下图<br><img src="https://img-blog.csdnimg.cn/20190218184427114.png" style=""></p>
+<li><p>将红框中的链接复制到博客文本当中，如下图</p>
 </li>
 </ol>
+<p><img src="https://img-blog.csdnimg.cn/20190219180500387.png" style=""></p>
 
           
         
@@ -813,7 +826,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-18 20:00:12" itemprop="dateModified" datetime="2019-02-18T20:00:12+08:00">2019-02-18</time>
+                <time title="修改时间：2019-02-19 18:42:44" itemprop="dateModified" datetime="2019-02-19T18:42:44+08:00">2019-02-19</time>
               
             
           </span>
@@ -883,15 +896,19 @@
             <ul>
 <li><p>用scrapy写一个爬取百度贴吧的爬虫，以壁纸吧为例。</p>
 </li>
-<li><p>进入壁纸吧，审查元素，找到所有的帖子链接，获取帖子链接<br><img src="https://img-blog.csdnimg.cn/2019021818594911.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podV8xOTk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">results = response.css(<span class="string">".threadlist_lz.clearfix a::attr(href)"</span>).extract()</span><br></pre></td></tr></table></figure>
+<li><p>进入壁纸吧，审查元素，找到所有的帖子链接，获取帖子链接</p>
 </li>
+</ul>
+<p><img src="/2019/02/16/Scrapy 爬取百度贴吧全站图片/2019021818594911.png" alt=""><br>代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">results = response.css(<span class="string">".threadlist_lz.clearfix a::attr(href)"</span>).extract()</span><br></pre></td></tr></table></figure></p>
+<ul>
 <li><p>设置item</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">tiebaItem</span><span class="params">(scrapy.Item)</span>:</span></span><br><span class="line">    <span class="comment"># define the fields for your item here like:</span></span><br><span class="line">    <span class="comment"># 图片链接</span></span><br><span class="line">    url = scrapy.Field()</span><br><span class="line">    <span class="comment"># 帖子标题，作为文件夹名存储本帖子的图片</span></span><br><span class="line">    title = scrapy.Field()</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>进入帖子审查元素，获取帖子内所有图片的链接和帖子名称，存入item<br><img src="https://img-blog.csdnimg.cn/2019021819084885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podV8xOTk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">item[&apos;url&apos;] = response.css(&apos;.BDE_Image::attr(src)&apos;).extract()</span><br><span class="line">item[&apos;title&apos;] = response.css(&apos;h3::attr(title)&apos;).extract_first()</span><br></pre></td></tr></table></figure>
+<li><p>进入帖子审查元素，获取帖子内所有图片的链接和帖子名称，存入item</p>
 </li>
+</ul>
+<p><img src="/2019/02/16/Scrapy 爬取百度贴吧全站图片/2.png" alt=""><br>代码<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">item[&apos;url&apos;] = response.css(&apos;.BDE_Image::attr(src)&apos;).extract()</span><br><span class="line">item[&apos;title&apos;] = response.css(&apos;h3::attr(title)&apos;).extract_first()</span><br></pre></td></tr></table></figure></p>
+<ul>
 <li><p>因为帖子内的页面不止一页，所以这里选择获取获取当前的页数和总页数，如果当前页不是最后一页，则继续解析下一页，直到最后一页</p>
   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cur_page = response.css(<span class="string">'.l_pager.pager_theme_4.pb_list_pager span::text'</span>).extract_first()</span><br><span class="line">last_page = response.css(<span class="string">'.l_posts_num .l_reply_num span::text'</span>).extract()[<span class="number">1</span>]</span><br><span class="line"><span class="keyword">if</span> cur_page <span class="keyword">and</span> last_page <span class="keyword">and</span> int(cur_page) &lt; int(last_page):</span><br><span class="line">    next_url = url_page + <span class="string">'?pn=&#123;page&#125;'</span>.format(page=str(int(cur_page)+<span class="number">1</span>))</span><br><span class="line">    <span class="keyword">yield</span> Request(url=next_url, callback=self.image_parse)</span><br></pre></td></tr></table></figure>
 </li>
