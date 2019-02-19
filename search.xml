@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title><![CDATA[hexo博客添加图片的小技巧]]></title>
-    <url>%2F2019%2F02%2F18%2Fhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
-    <content type="text"><![CDATA[打开csdn博客的编辑页 将图片拖入编辑框 点击F12审查元素，查看图片所在元素 将红框中的链接复制到博客文本当中，如下图]]></content>
+    <url>%2F2019%2F02%2F19%2Fhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[1.在博客目录下安装图片插件，代码如下：1npm install hexo-asset-image --save 2.接下来新建文章，文章所在目录会多出一个同名文件夹，将图片放在文件夹下 3.在文章中输入！：12\[](文件夹名/图片名) 例子： \[](博客示例/pic.jpg)` 即可 4.如果是已有文章，可以手动新建一个文件夹，后续步骤同上]]></content>
       <categories>
         <category>hexo博客</category>
       </categories>
@@ -30,9 +30,9 @@
         <category>爬虫</category>
       </categories>
       <tags>
+        <tag>scrapy</tag>
         <tag>爬虫</tag>
         <tag>python</tag>
-        <tag>scrapy</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +44,8 @@
       </categories>
       <tags>
         <tag>爬虫</tag>
-        <tag>Scrapy</tag>
         <tag>python</tag>
+        <tag>Scrapy</tag>
       </tags>
   </entry>
   <entry>
