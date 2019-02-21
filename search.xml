@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[九阴真经总纲]]></title>
+    <url>%2F2019%2F02%2F21%2F%E4%B9%9D%E9%98%B4%E7%9C%9F%E7%BB%8F%E6%80%BB%E7%BA%B2%2F</url>
+    <content type="text"><![CDATA[天之道，损有余而补不足，是故虚胜实，不足胜有余。 其意博，其理奥，其趣深，天地之象分，阴阳之侯列，变化之由表，死生之昭彰，不谋而遗迹自同，勿约而幽明斯契,稽其言有微，验之事不忒，诚可谓至道之宗，奉生之始矣。假若天机迅发，妙识玄通，成谋虽属乎生知，标格亦资与治训，未尝有行不有送，出不由产者亦。 然刻意研精，探微索隐，或识契真要，则目牛无全，故动则有成，犹有鬼神幽赞，而命世奇杰，时时兼有出焉。 大意： 自然的法则，是通过减损有余的来弥补不足的，因此虚的胜过实的，不够的胜过有多的。 它的意义广博，它的道理奥妙，它的趣味深远，天地的气象分明，阴阳气候依次排列，事物变化有序，生死的规律显现，没有商讨但是留下的规律相同，没有约定但是事务都非常契合，真可以说是所有道理的源头，是养生的开始。 如果天资聪明，就可以明白玄奥的道理，办成事情虽然需要聪明的资质，但是品格风范也来自于先人的教导，还没有人走路不从路上走，出入不由门户的。 如果努力研究其中的精神，探讨其中奥妙的含义，然后能够明白道理的精髓，那就达到熟练高超的地步了，这时行动就能有所成就，像是有鬼神的帮助，那些闻名于世的人，也就经常出现了。]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>九阴真经</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo博客添加图片的小技巧]]></title>
     <url>%2F2019%2F02%2F19%2Fhexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
     <content type="text"><![CDATA[1.在博客目录下安装图片插件，代码如下：1npm install hexo-asset-image --save 2.接下来新建文章，文章所在目录会多出一个同名文件夹，将图片放在文件夹下 3.在文章中输入！：1\[](文件夹名/图片名) 例子： \[](博客示例/pic.jpg) 即可 4.如果是已有文章，可以手动新建一个文件夹，后续步骤同上]]></content>
@@ -30,9 +41,9 @@
         <category>爬虫</category>
       </categories>
       <tags>
-        <tag>scrapy</tag>
         <tag>爬虫</tag>
         <tag>python</tag>
+        <tag>scrapy</tag>
       </tags>
   </entry>
   <entry>
@@ -44,8 +55,8 @@
       </categories>
       <tags>
         <tag>爬虫</tag>
-        <tag>python</tag>
         <tag>Scrapy</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
